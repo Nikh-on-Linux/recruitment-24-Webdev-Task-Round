@@ -63,6 +63,8 @@ Here’s the updated **Option 2** with the specific instructions on creating a p
 11. Add a meaningful title and description summarizing your changes.  
 12. Finally, click on **Create Pull Request** to submit your work.  
 
+## **Task Files**
+The details for both tasks are mentioned in the respective files inside this repository:
 
 
 ## **Need Help?**  
