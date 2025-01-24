@@ -1,0 +1,50 @@
+@media only screen and (max-width: 425px) {
+  .card {
+    width: 327px;
+    height: 501px;
+    padding: 20px;
+  }
+
+  .cards .content p:nth-child(2){
+    font-size: 12px;
+  }
+
+  .cards .content .title{
+    font-size: 20px;
+  }
+
+  .card .content span{
+    font-size: 14px;
+  }
+
+  .card .batch span{
+    font-size: 12px;
+  }
+}
+
+
+@media only screen and (max-width:328px){
+    .card{
+        width: 280px;
+        height: 425px;
+        padding: 18px;
+        gap: 24px;
+    }
+
+    .card .content {
+        gap: 10px;
+    }
+
+    .card .content span{
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .card .content p:nth-child(2){
+        font-size: 12px;
+    }
+    
+    .card .content .title{
+        font-size: 20px;
+    }
+}

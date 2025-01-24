@@ -1,0 +1,376 @@
+@media only screen and (max-width: 1406px) {
+  nav {
+    display: block;
+  }
+
+  .iContent .iTitle span {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1265px) {
+  nav {
+    display: block;
+  }
+
+  .introCard {
+    width: calc(70% - 5px);
+  }
+
+  .intro .newAdded {
+    width: calc(30% - 5px);
+    padding: 20px 24px;
+    gap: 0px;
+  }
+
+  .iContent .iTitle span {
+    font-size: 3.5rem;
+  }
+  .iContent {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .iDesc {
+    flex: 1;
+  }
+
+  .newItem {
+    margin: 26px 0;
+  }
+
+  .newTitle h3 {
+    font-size: 18px;
+  }
+
+  .newDesc span {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1152px) {
+  nav {
+    display: block;
+  }
+
+  body {
+    width: 92vw;
+  }
+  .iContent .iTitle span {
+    font-size: 3rem;
+    line-height: 5px;
+    width: 100%;
+  }
+
+  .introCard {
+    width: (70%);
+  }
+
+  .newAdded {
+    width: calc(30%);
+  }
+
+  .newIntro {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 987px) {
+  .intro .introCard .iContent {
+    gap: 50px;
+    /* align-items:baseline; */
+  }
+
+  nav {
+    display: block;
+  }
+
+  .iContent .iTitle span {
+    font-size: 2.5rem;
+  }
+
+  .iContent .iTitle {
+    line-height: 2.5rem;
+  }
+
+  .iContent .iDesc {
+    font-size: 13px;
+  }
+
+  .iContent .iDesc button {
+    margin: 20px 0;
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro .introCard {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .intro .newAdded {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro .newAdded .contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  hr {
+    height: 15px;
+  }
+
+  .newItem {
+    margin: 12px 0;
+  }
+
+  .newTitle {
+    align-items: start;
+  }
+
+  .newTitle h3 {
+    font-size: 15px;
+  }
+
+  .newDesc span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro .introCard {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .intro .newAdded {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .intro .newAdded .contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+  hr {
+    height: 15px;
+  }
+
+  .newItem {
+    margin: 12px 0;
+  }
+
+  .newTitle {
+    align-items: start;
+  }
+
+  .newTitle h3 {
+    font-size: 15px;
+  }
+
+  .newDesc span {
+    font-size: 12px;
+  }
+
+  .seemore {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .sDom {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .sContent {
+    justify-content: space-between;
+  }
+
+  .sContent span {
+    font-size: 25px;
+  }
+
+  .sImg {
+    width: 10rem;
+  }
+
+  .sContent .sTitle p {
+    font-size: 18px;
+  }
+
+  .sContent p:nth-child(3) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .menu {
+    display: block;
+  }
+
+  header {
+    position: relative;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    width: 10rem;
+    right: 0;
+    z-index: 1;
+    transform-origin: top;
+    top: 150%;
+    background-color: var(--Off-white);
+    padding: 10px 12px;
+    transform-origin: right;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navItems {
+    margin: 15px 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .intro .introCard {
+    gap: 10px;
+  }
+
+  .intro .introCard .iContent {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .intro .introCard .iTitle {
+    width: 70%;
+  }
+
+  .intro .introCard .iDesc {
+    width: 90%;
+  }
+
+  .intro .newAdded {
+    padding: 26px 24px;
+  }
+
+  .intro .newAdded .contents {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .intro .newAdded .newItem {
+    z-index: 2;
+  }
+
+  .intro .newAdded .contents .newTitle h3 {
+    font-size: 22px;
+  }
+
+  .intro .newAdded .contents .newDesc span {
+    font-size: 18px;
+  }
+
+  .intro .newAdded .contents .newItem {
+    margin: 35px 0;
+  }
+
+  .intro .introCard .iContent .iDesc p {
+    font-size: 15px;
+  }
+
+  hr {
+    height: 1px;
+    width: 100%;
+  }
+
+  .seemore {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .sDom {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .sContent {
+    justify-content: space-between;
+  }
+
+  .sContent span {
+    font-size: 25px;
+  }
+
+  .sImg {
+    width: 10rem;
+  }
+
+  .sContent .sTitle p {
+    font-size: 18px;
+  }
+
+  .sContent p:nth-child(3) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .intro .introCard .iTitle span {
+    font-size: 1.7rem;
+  }
+
+  .intro .introCard .iTitle {
+    line-height: 1.4rem;
+  }
+
+  .intro .newAdded .contents {
+    gap: 0;
+  }
+
+  .intro .newAdded .contents .newItem {
+    margin: 20px 0;
+  }
+
+  .intro .newAdded .newItem .newTitle h3 {
+    font-size: 17px;
+  }
+
+  .intro .newAdded .newItem .newDesc span {
+    font-size: 14px;
+  }
+}

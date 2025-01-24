@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--yellow);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-radius: 20px;
+    border: 1px solid var(--gray950);
+    width: 384px;
+    height: 522px;
+    background-color: var(--white);
+    padding: var(--s300);
+    gap: var(--s300);
+    box-shadow: 8px 8px 0 black;
+    cursor: pointer;
+    transition: all .3s ease;
+    perspective: 100px;
+    transform-style: preserve-3d;
+}
+
+.card:hover{
+    box-shadow: 12px 12px 0 black;
+}
+
+.card .blob img{
+    width: 100%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: var(--s150);
+    padding: 0;
+}
+
+.batch{
+    background-color: var(--yellow);
+    padding: var(--s50) var(--s150);
+    border-radius: 4px;
+}
+
+.card .content .title{
+    transition: all .3s ease;
+}
+
+.content .batch span{
+    color: var(--gray950);
+    line-height: 21px;
+}
+
+/* .content p:nth-child(1){
+    line-height: 21px;
+}
+
+.content P:nth-child(2){
+    line-height: 36px;
+} */
+
+.card:hover .content .title{
+    color: var(--yellow);
+}
+
+.content span{
+    color: var(--gray500);
+    line-height: 24px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--s150);
+}
+
+.user .userpic{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.user .userpic img{
+    width: 100%;
+}

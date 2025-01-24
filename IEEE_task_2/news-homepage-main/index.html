@@ -1,19 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/utils.styles.css" />
+    <link rel="stylesheet" href="./styles/main.styles.css" />
+    <link rel="stylesheet" href="./styles/responsive.styles.css" />
+    <title>Frontend Mentor | News Homepage</title>
+  </head>
+  <body class="flex-column">
+    <header class="flex-row centerY inter-400">
+      <div class="branding">
+        <img src="./assets/images/logo.svg" alt="brand-logo" />
+      </div>
+      <nav class="nav" >
+        <ul class="flex-row centerY">
+          <li class="navItems"><a href="#">Home</a></li>
+          <li class="navItems"><a href="#">New</a></li>
+          <li class="navItems"><a href="#">Popular</a></li>
+          <li class="navItems"><a href="#">Trending</a></li>
+          <li class="navItems"><a href="#">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="menu">
+        <img id="menu-open" data-isOpen="false" src="./assets/images/icon-menu.svg" alt="icon menu">
+      </div>
+    </header>
+    <main>
+      <div class="intro flex-row">
+        <div class="introCard flex-column">
+          <picture>
+            <source
+              media="(max-width: 425px)"
+              srcset="./assets/images/image-web-3-mobile.jpg"
+            />
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="Web 3.0" />
+          </picture>
+          <div class="iContent flex-row">
+            <div class="iTitle">
+              <span class="inter-800">The Bright Future of Web 3.0?</span>
+            </div>
+            <div class="iDesc inter-400 flex-column">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button id="readmoreButton" class="button inter-700 flex-row">
+                <span id="readmoreText">READ MORE</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="newAdded flex-column">
+          <p class="inter-700 newIntro">New</p>
+          <div class="contents">
+            <div class="newItem flex-column">
+              <div class="newTitle inter-700 flex-row centerY">
+                <h3>Hydrogen VS Electric Cars</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                  />
+                </svg>
+              </div>
+              <div class="newDesc inter-400">
+                <span>Will hydrogen-fueled cars ever catch up to EVs?</span>
+              </div>
+            </div>
+            <hr />
+            <div class="newItem flex-column">
+              <div class="newTitle inter-700 flex-row centerY">
+                <h3>The Downsides of AI Artistry</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                  />
+                </svg>
+              </div>
+              <div class="newDesc inter-400">
+                <span
+                  >What are the possible adverse effects of on-demand AI image
+                  generation?</span
+                >
+              </div>
+            </div>
+            <hr />
+            <div class="newItem flex-column">
+              <div class="newTitle inter-700 flex-row centerY">
+                <h3>Is VC Funding Drying Up?</h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                  />
+                </svg>
+              </div>
+              <div class="newDesc inter-400">
+                <span
+                  >Private funding by VC firms is down 50% YOY. We take a look
+                  at what that means.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="seemore flex-row centerY centerX">
+        <div class="sDom flex-row centerY">
+          <div class="sImg">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs" />
+          </div>
+          <div class="sContent flex-column">
+            <span class="inter-700">01</span>
+            <div class="sTitle flex-row centerY">
+              <p class="inter-800">Reviving Retro PCs</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg>
+            </div>
+            <p class="inter-400">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="sDom flex-row centerY">
+          <div class="sImg">
+            <img
+              src="./assets/images/image-top-laptops.jpg"
+              alt="top laptops"
+            />
+          </div>
+          <div class="sContent flex-column">
+            <span class="inter-700">02</span>
+            <div class="sTitle flex-row centerY">
+              <p class="inter-800">Top 10 Laptops of 2022</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg>
+            </div>
+            <p class="inter-400">
+              Out best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="sDom flex-row centerY">
+          <div class="sImg">
+            <img
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="gaming growth"
+            />
+          </div>
+          <div class="sContent flex-column">
+            <span class="inter-700">03</span>
+            <div class="sTitle flex-row centerY">
+              <p class="inter-800">The Growth og Gaming</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg>
+            </div>
+            <p class="inter-400">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./logic/app.js"></script>
+  </body>
 </html>
