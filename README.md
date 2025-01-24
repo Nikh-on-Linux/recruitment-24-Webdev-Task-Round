@@ -1,5 +1,17 @@
 # Recruitment-24-Webdev-Task-Round
 
+## **Task is live, check the links below.**
+
+### Task 1 
+ ```bash
+    https://ieee-taskround-nikhil.netlify.app/
+ ```
+
+### Task 2
+ ```bash
+    https://ieee-taskround-nikhil.netlify.app/ieee_task_2/news-homepage-main/
+ ```
+
 ## **How to Access the Files**  
 
 
